@@ -60,7 +60,7 @@ A 10 kΩ pull-up resistor bridges the DHT11 data line to 3.3V — required since
 
 ## Schematic
 
-![Circuit schematic](assets/schematic.png)
+![Circuit schematic](Photos/schematic.png)
 
 > KiCad capture of the circuit's electrical connections. Pin numbers shown are the IC-level pinout for the module footprint used in the schematic library; refer to the [Wiring](#wiring) table above for the GPIO labels as silkscreened on the ESP32-WROOM-32E dev board itself.
 
@@ -99,7 +99,7 @@ xTaskCreatePinnedToCore(dhtSensorTask, "DHT11_Sensor", 4096, NULL, 1, &dhtTaskHa
 
 ## Build Photo
 
-![Assembled breadboard circuit](assets/circuit_photo.png)
+![Assembled breadboard circuit](Photos/circuit_photo.png)
 
 ESP32-WROOM-32E (top), LED with current-limiting resistor (center-left), and DHT11 sensor (bottom-right) on the breadboard.
 
@@ -107,7 +107,7 @@ ESP32-WROOM-32E (top), LED with current-limiting resistor (center-left), and DHT
 
 ## Serial Output
 
-![Serial Monitor output](assets/serial_monitor.png)
+![Serial Monitor output](Photos/serial_monitor.png)
 
 Live temperature, humidity, and computed heat-index readings streamed from the DHT11 task every 2 seconds at 115200 baud, while the LED task runs independently on the other core.
 
